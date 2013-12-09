@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B534C77518517EE600862B89 /* ProximityKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = B534C77418517EE600862B89 /* ProximityKit.plist */; };
 		B575FB381843A4270061447D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B575FB371843A4270061447D /* Foundation.framework */; };
 		B575FB3A1843A4270061447D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B575FB391843A4270061447D /* CoreGraphics.framework */; };
 		B575FB3C1843A4270061447D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B575FB3B1843A4270061447D /* UIKit.framework */; };
@@ -15,13 +16,13 @@
 		B575FB481843A4270061447D /* PKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B575FB471843A4270061447D /* PKAppDelegate.m */; };
 		B575FB4E1843A4270061447D /* PKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B575FB4D1843A4270061447D /* PKViewController.m */; };
 		B575FB501843A4270061447D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B575FB4F1843A4270061447D /* Images.xcassets */; };
-		B575FB6D1843A7E90061447D /* ProximityKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = B575FB6C1843A7E90061447D /* ProximityKit.plist */; };
-		B576C40E1843AC4100C7C0BE /* ProximityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B576C40D1843AC4100C7C0BE /* ProximityKit.framework */; };
 		B576C4111843B62600C7C0BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B576C4101843B62600C7C0BE /* Main.storyboard */; };
 		B576C4131843C28000C7C0BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B576C4121843C28000C7C0BE /* README.md */; };
+		B5EA5E7A18563FB600123536 /* ProximityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EA5E7918563FB600123536 /* ProximityKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B534C77418517EE600862B89 /* ProximityKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProximityKit.plist; sourceTree = "<group>"; };
 		B575FB341843A4270061447D /* PKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B575FB371843A4270061447D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B575FB391843A4270061447D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -36,10 +37,9 @@
 		B575FB4D1843A4270061447D /* PKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKViewController.m; sourceTree = "<group>"; };
 		B575FB4F1843A4270061447D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B575FB561843A4270061447D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B575FB6C1843A7E90061447D /* ProximityKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProximityKit.plist; sourceTree = "<group>"; };
-		B576C40D1843AC4100C7C0BE /* ProximityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProximityKit.framework; sourceTree = "<group>"; };
 		B576C4101843B62600C7C0BE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B576C4121843C28000C7C0BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		B5EA5E7918563FB600123536 /* ProximityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProximityKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 				B575FB3A1843A4270061447D /* CoreGraphics.framework in Frameworks */,
 				B575FB3C1843A4270061447D /* UIKit.framework in Frameworks */,
 				B575FB381843A4270061447D /* Foundation.framework in Frameworks */,
-				B576C40E1843AC4100C7C0BE /* ProximityKit.framework in Frameworks */,
+				B5EA5E7A18563FB600123536 /* ProximityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +78,7 @@
 		B575FB361843A4270061447D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B576C40D1843AC4100C7C0BE /* ProximityKit.framework */,
+				B5EA5E7918563FB600123536 /* ProximityKit.framework */,
 				B575FB371843A4270061447D /* Foundation.framework */,
 				B575FB391843A4270061447D /* CoreGraphics.framework */,
 				B575FB3B1843A4270061447D /* UIKit.framework */,
@@ -90,10 +90,10 @@
 		B575FB3D1843A4270061447D /* PKExample */ = {
 			isa = PBXGroup;
 			children = (
+				B534C77418517EE600862B89 /* ProximityKit.plist */,
 				B575FB3E1843A4270061447D /* Supporting Files */,
 				B575FB4F1843A4270061447D /* Images.xcassets */,
 				B576C4101843B62600C7C0BE /* Main.storyboard */,
-				B575FB6C1843A7E90061447D /* ProximityKit.plist */,
 				B575FB461843A4270061447D /* PKAppDelegate.h */,
 				B575FB471843A4270061447D /* PKAppDelegate.m */,
 				B575FB4C1843A4270061447D /* PKViewController.h */,
@@ -166,8 +166,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B534C77518517EE600862B89 /* ProximityKit.plist in Resources */,
 				B575FB501843A4270061447D /* Images.xcassets in Resources */,
-				B575FB6D1843A7E90061447D /* ProximityKit.plist in Resources */,
 				B576C4131843C28000C7C0BE /* README.md in Resources */,
 				B575FB421843A4270061447D /* InfoPlist.strings in Resources */,
 				B576C4111843B62600C7C0BE /* Main.storyboard in Resources */,

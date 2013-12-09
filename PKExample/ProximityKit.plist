@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!--
+	Download this file to 'ProximityKit.plist' in your project folder, then drag it into Xcode to configure the library.
+-->
+<dict>
+	<key>PKKitName</key>
+	<string>Naow</string>
+	<key>PKUserIdentifier</key>
+	<string>173</string>
+	<key>PKUserEmail</key>
+	<string>dev@naow.com</string>
+	<key>PKGlobalUserIdentifier</key>
+	<string>352</string>
+	<key>PKAPIToken</key>
+	<string>8e85e104222ad2b60cfb10d06bc67d91618c92cb91e2e46bd68271f977c7d97c</string>
+	<key>PKKitURL</key>
+	<string>http://proximitykit.com/api/kits/131</string>
+	<key>PKMapURL</key>
+	<string>http://proximitykit.com/api/maps/94</string>
+	<key>PKMapName</key>
+	<string>NYC</string>
+</dict>
+</plist>
+
