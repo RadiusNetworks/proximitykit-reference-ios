@@ -6,21 +6,21 @@
 -->
 <dict>
 	<key>PKKitName</key>
-	<string>Naow</string>
+	<string>Example App</string>
 	<key>PKUserIdentifier</key>
-	<string>173</string>
+	<string>128</string>
 	<key>PKUserEmail</key>
-	<string>dev@naow.com</string>
+	<string>admin@radiusnetworks.com</string>
 	<key>PKGlobalUserIdentifier</key>
-	<string>352</string>
+	<string>1</string>
 	<key>PKAPIToken</key>
-	<string>8e85e104222ad2b60cfb10d06bc67d91618c92cb91e2e46bd68271f977c7d97c</string>
+	<string>a70d06386b0aa886e4f1de8c09f0e9030e937c20abb7318e0b45283e1f6615f5</string>
 	<key>PKKitURL</key>
-	<string>http://proximitykit.com/api/kits/131</string>
+	<string>http://proximitykit.com/api/kits/99</string>
 	<key>PKMapURL</key>
-	<string>http://proximitykit.com/api/maps/94</string>
+	<string>http://proximitykit.com/api/maps/72</string>
 	<key>PKMapName</key>
-	<string>NYC</string>
+	<string>Radius HQ</string>
 </dict>
 </plist>
 
