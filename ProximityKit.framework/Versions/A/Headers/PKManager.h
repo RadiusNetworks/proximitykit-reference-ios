@@ -5,6 +5,7 @@
 #import <UIKit/UIKit.h>
 #import "PKManagerDelegate.h"
 #import "PKRegion.h"
+#import "PKKit.h"
 
 /*
  * Type PKFetchCompletionHandler
@@ -52,6 +53,19 @@ typedef void(^PKFetchCompletionHandler)(UIBackgroundFetchResult);
  *
  */
 - (void)start;
+
+/*
+ *  stop
+ *
+ *  Discussion:
+ *      Unregister regions and beacons and stop automatic syncing.
+ *
+ *      While the PKManager is stopped if `sync` is called the api will be called
+ *      and data downloaded and synced. However, any regions will not be
+ *      registered with CoreLocation.
+ *
+ */
+- (void)stop;
 
 /*
  *  sync
@@ -129,6 +143,16 @@ typedef void(^PKFetchCompletionHandler)(UIBackgroundFetchResult);
 @property (assign) id <CLLocationManagerDelegate> locationManagerDelegate;
 
 /*
+ *  kit
+ *
+ *  Discussion:
+ *      The representation of the Kit as defined in the Proximity Kit service.
+ *      This contains lists of iBeacons and Geofences.
+ *
+ */
+@property (readonly) PKKit *kit;
+
+/*
  * getRegionForIdentifier
  *
  *  Discussion:
@@ -148,13 +172,5 @@ typedef void(^PKFetchCompletionHandler)(UIBackgroundFetchResult);
  */
 - (void)startRangingIBeacons;
 
-/*
- * stopRangingIBeacons
- *
- *  Discussion:
- *      Stop calculating ranges for iBeacons.
- *
- */
-- (void)stopRangingIBeacons;
 
 @end
