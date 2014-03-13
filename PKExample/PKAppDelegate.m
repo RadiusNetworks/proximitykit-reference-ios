@@ -51,36 +51,38 @@
 #pragma mark Proximity Kit Delegate Methods
 
 - (void)proximityKitDidSync:(PKManager *)manager {
-    [self alert:@"Did Sync"];
+    NSLog(@"Did Sync");
 }
 - (void)proximityKit:(PKManager *)manager didEnter:(PKRegion*)region {
-    [self alert:@"Entered Region %@ (%@)", region.name, region.identifier];
+    NSLog(@"Entered Region %@ (%@)", region.name, region.identifier);
 }
 
 - (void)proximityKit:(PKManager *)manager didExit:(PKRegion *)region {
-    [self alert:@"Exited Region %@ (%@)", region.name, region.identifier];
+    NSLog(@"Exited Region %@ (%@)", region.name, region.identifier);
 }
 
-- (void)proximityKit:(PKManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(PKRegion *)region
+- (void)proximityKit:(PKManager *)manager didRangeBeacons:(NSArray *)ibeacons inRegion:(PKIBeacon *)region
 {
-    [self alert:@"Ranged in Region %@ (%@)", region.name, region.identifier];
+    for (PKIBeacon *ibeacon in ibeacons) {
+        NSLog(@"Ranged UUID: %@ Major:%ld Minor:%ld RSSI:%ld", [ibeacon.uuid UUIDString], (long)ibeacon.major, (long)ibeacon.minor, (long)ibeacon.rssi);
+    }
 }
 
 - (void)proximityKit:(PKManager *)manager didDetermineState:(PKRegionState)state forRegion:(PKRegion *)region
 {
 
     if (state == PKRegionStateInside) {
-        [self alert:@"State Changed: inside region %@ (%@)", region.name, region.identifier];
+        NSLog(@"State Changed: inside region %@ (%@)", region.name, region.identifier);
     } else if (state == PKRegionStateOutside) {
-        [self alert:@"State Changed: outside region %@ (%@)", region.name, region.identifier];
+        NSLog(@"State Changed: outside region %@ (%@)", region.name, region.identifier);
     } else if (state == PKRegionStateUnknown) {
-        [self alert:@"State Changed: unknown region %@ (%@)", region.name, region.identifier];
+        NSLog(@"State Changed: unknown region %@ (%@)", region.name, region.identifier);
     }
 }
 
 - (void)proximityKit:(PKManager *)manager didFailWithError:(NSError *)error
 {
-    [self alert:@"Error: %@", error.description];
+    NSLog(@"Error: %@", error.description);
 }
 
 #pragma mark Helper Methods
