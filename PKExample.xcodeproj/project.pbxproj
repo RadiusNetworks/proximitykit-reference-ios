@@ -13,12 +13,12 @@
 		B575FB3C1843A4270061447D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B575FB3B1843A4270061447D /* UIKit.framework */; };
 		B575FB421843A4270061447D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B575FB401843A4270061447D /* InfoPlist.strings */; };
 		B575FB441843A4270061447D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B575FB431843A4270061447D /* main.m */; };
-		B575FB481843A4270061447D /* PKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B575FB471843A4270061447D /* PKAppDelegate.m */; };
-		B575FB4E1843A4270061447D /* PKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B575FB4D1843A4270061447D /* PKViewController.m */; };
+		B575FB481843A4270061447D /* RPKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B575FB471843A4270061447D /* RPKAppDelegate.m */; };
 		B575FB501843A4270061447D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B575FB4F1843A4270061447D /* Images.xcassets */; };
 		B576C4111843B62600C7C0BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B576C4101843B62600C7C0BE /* Main.storyboard */; };
 		B576C4131843C28000C7C0BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B576C4121843C28000C7C0BE /* README.md */; };
 		B5EA5E7A18563FB600123536 /* ProximityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EA5E7918563FB600123536 /* ProximityKit.framework */; };
+		D89992D519DB1D55008F5BEF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89992D419DB1D55008F5BEF /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,15 +31,13 @@
 		B575FB411843A4270061447D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B575FB431843A4270061447D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B575FB451843A4270061447D /* PKExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PKExample-Prefix.pch"; sourceTree = "<group>"; };
-		B575FB461843A4270061447D /* PKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKAppDelegate.h; sourceTree = "<group>"; };
-		B575FB471843A4270061447D /* PKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKAppDelegate.m; sourceTree = "<group>"; };
-		B575FB4C1843A4270061447D /* PKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKViewController.h; sourceTree = "<group>"; };
-		B575FB4D1843A4270061447D /* PKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKViewController.m; sourceTree = "<group>"; };
+		B575FB461843A4270061447D /* RPKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPKAppDelegate.h; sourceTree = "<group>"; };
+		B575FB471843A4270061447D /* RPKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPKAppDelegate.m; sourceTree = "<group>"; };
 		B575FB4F1843A4270061447D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B575FB561843A4270061447D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B576C4101843B62600C7C0BE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B576C4121843C28000C7C0BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		B5EA5E7918563FB600123536 /* ProximityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProximityKit.framework; sourceTree = "<group>"; };
+		D89992D419DB1D55008F5BEF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89992D519DB1D55008F5BEF /* libsqlite3.dylib in Frameworks */,
 				B575FB3A1843A4270061447D /* CoreGraphics.framework in Frameworks */,
 				B575FB3C1843A4270061447D /* UIKit.framework in Frameworks */,
 				B575FB381843A4270061447D /* Foundation.framework in Frameworks */,
@@ -78,11 +77,11 @@
 		B575FB361843A4270061447D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D89992D419DB1D55008F5BEF /* libsqlite3.dylib */,
 				B5EA5E7918563FB600123536 /* ProximityKit.framework */,
 				B575FB371843A4270061447D /* Foundation.framework */,
 				B575FB391843A4270061447D /* CoreGraphics.framework */,
 				B575FB3B1843A4270061447D /* UIKit.framework */,
-				B575FB561843A4270061447D /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,10 +93,8 @@
 				B575FB3E1843A4270061447D /* Supporting Files */,
 				B575FB4F1843A4270061447D /* Images.xcassets */,
 				B576C4101843B62600C7C0BE /* Main.storyboard */,
-				B575FB461843A4270061447D /* PKAppDelegate.h */,
-				B575FB471843A4270061447D /* PKAppDelegate.m */,
-				B575FB4C1843A4270061447D /* PKViewController.h */,
-				B575FB4D1843A4270061447D /* PKViewController.m */,
+				B575FB461843A4270061447D /* RPKAppDelegate.h */,
+				B575FB471843A4270061447D /* RPKAppDelegate.m */,
 			);
 			path = PKExample;
 			sourceTree = "<group>";
@@ -142,6 +139,11 @@
 				CLASSPREFIX = PK;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = RadiusNetworks;
+				TargetAttributes = {
+					B575FB331843A4270061447D = {
+						DevelopmentTeam = 2Z2S6NCD7P;
+					};
+				};
 			};
 			buildConfigurationList = B575FB2F1843A4270061447D /* Build configuration list for PBXProject "PKExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -182,8 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B575FB441843A4270061447D /* main.m in Sources */,
-				B575FB4E1843A4270061447D /* PKViewController.m in Sources */,
-				B575FB481843A4270061447D /* PKAppDelegate.m in Sources */,
+				B575FB481843A4270061447D /* RPKAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +277,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -284,6 +287,7 @@
 				GCC_PREFIX_HEADER = "PKExample/PKExample-Prefix.pch";
 				INFOPLIST_FILE = "PKExample/PKExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -293,6 +297,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -301,6 +307,7 @@
 				GCC_PREFIX_HEADER = "PKExample/PKExample-Prefix.pch";
 				INFOPLIST_FILE = "PKExample/PKExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
