@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "PKAppDelegate.h"
+#import "RPKAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([PKAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([RPKAppDelegate class]));
     }
 }
