@@ -64,7 +64,7 @@
 - (void)proximityKit:(RPKManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(RPKBeacon *)region
 {
     for (RPKBeacon *beacon in beacons) {
-        NSLog(@"Ranged UUID: %@ Major:%ld Minor:%ld RSSI:%ld", [beacon.uuid UUIDString], (long)beacon.major, (long)beacon.minor, (long)beacon.rssi);
+        NSLog(@"Ranged UUID: %@ Major:%@ Minor:%@ RSSI:%@", [beacon.uuid UUIDString], beacon.major, beacon.minor, beacon.rssi);
     }
 }
 
