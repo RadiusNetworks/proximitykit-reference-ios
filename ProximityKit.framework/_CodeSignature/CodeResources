@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ProximityKit.h</key>
 		<data>
-		gbBMXPYp1KIVEVTxtQmYi+66U6Q=
+		s482bu3VorzUBjjgEGB0eeyPxNU=
 		</data>
 		<key>Headers/RPKAnalyticsEvent.h</key>
 		<data>
@@ -14,39 +14,43 @@
 		</data>
 		<key>Headers/RPKBeacon.h</key>
 		<data>
-		coteViQ1aQr3E1K35mkNtzVoN2c=
+		/TkgH9VaQJGA3MN6JuidSAwL18A=
 		</data>
 		<key>Headers/RPKBeaconRegion.h</key>
 		<data>
-		aZwscSS0eJExrT/wEq4dTqks8X0=
+		h/UNBRc/q4/6G2x0y+3TsnNhYT4=
 		</data>
 		<key>Headers/RPKCircle.h</key>
 		<data>
-		JRG8XDtadv4PNxv5zdVw8u+dX+8=
+		Yx+CW7vR6RLlVv/Yylz/dGgB3AM=
 		</data>
 		<key>Headers/RPKKit.h</key>
 		<data>
-		8NcL4WIuDtjSY/V7NJj3HMAQtTM=
+		6e6d9Ss3BLDuk9MmNDP6wVFYdpM=
 		</data>
 		<key>Headers/RPKLogger.h</key>
 		<data>
-		ldJ4M0hY+gTGyUTQi/PrSe33w+o=
+		B7ysdi0EV9iWKQ8QqFi2q8XF3ho=
 		</data>
 		<key>Headers/RPKManager.h</key>
 		<data>
-		VnRwALxLFpp+QPvjmHQRyyazkJE=
+		Lr49EEjjcATVATCKC7hOx/PDa3w=
 		</data>
 		<key>Headers/RPKManagerDelegate.h</key>
 		<data>
-		UYJX+F5I8TNJaA0IZehuPO4+8NI=
+		t4p9S4hBTW/MaHwMMSN/aCHkIeY=
 		</data>
 		<key>Headers/RPKMap.h</key>
 		<data>
-		FXQnpsFUv71RKJJe3sTW1jvJnzw=
+		AiQmCdDlHi3TBbwqszT5H2nR9II=
 		</data>
 		<key>Headers/RPKRegion.h</key>
 		<data>
-		jeb0KPiQvKQYbOQGlrH6wj6kUVg=
+		Igcrv+8diJJMiTcyzKcJt/WBdHw=
+		</data>
+		<key>Info.plist</key>
+		<data>
+		XpPbn6Ems4b3iclY5g76sQsAA2U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -57,7 +61,7 @@
 	<dict>
 		<key>Headers/ProximityKit.h</key>
 		<data>
-		gbBMXPYp1KIVEVTxtQmYi+66U6Q=
+		s482bu3VorzUBjjgEGB0eeyPxNU=
 		</data>
 		<key>Headers/RPKAnalyticsEvent.h</key>
 		<data>
@@ -65,39 +69,39 @@
 		</data>
 		<key>Headers/RPKBeacon.h</key>
 		<data>
-		coteViQ1aQr3E1K35mkNtzVoN2c=
+		/TkgH9VaQJGA3MN6JuidSAwL18A=
 		</data>
 		<key>Headers/RPKBeaconRegion.h</key>
 		<data>
-		aZwscSS0eJExrT/wEq4dTqks8X0=
+		h/UNBRc/q4/6G2x0y+3TsnNhYT4=
 		</data>
 		<key>Headers/RPKCircle.h</key>
 		<data>
-		JRG8XDtadv4PNxv5zdVw8u+dX+8=
+		Yx+CW7vR6RLlVv/Yylz/dGgB3AM=
 		</data>
 		<key>Headers/RPKKit.h</key>
 		<data>
-		8NcL4WIuDtjSY/V7NJj3HMAQtTM=
+		6e6d9Ss3BLDuk9MmNDP6wVFYdpM=
 		</data>
 		<key>Headers/RPKLogger.h</key>
 		<data>
-		ldJ4M0hY+gTGyUTQi/PrSe33w+o=
+		B7ysdi0EV9iWKQ8QqFi2q8XF3ho=
 		</data>
 		<key>Headers/RPKManager.h</key>
 		<data>
-		VnRwALxLFpp+QPvjmHQRyyazkJE=
+		Lr49EEjjcATVATCKC7hOx/PDa3w=
 		</data>
 		<key>Headers/RPKManagerDelegate.h</key>
 		<data>
-		UYJX+F5I8TNJaA0IZehuPO4+8NI=
+		t4p9S4hBTW/MaHwMMSN/aCHkIeY=
 		</data>
 		<key>Headers/RPKMap.h</key>
 		<data>
-		FXQnpsFUv71RKJJe3sTW1jvJnzw=
+		AiQmCdDlHi3TBbwqszT5H2nR9II=
 		</data>
 		<key>Headers/RPKRegion.h</key>
 		<data>
-		jeb0KPiQvKQYbOQGlrH6wj6kUVg=
+		Igcrv+8diJJMiTcyzKcJt/WBdHw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,47 +110,97 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>.*</key>
+		<key>^</key>
 		<true/>
-		<key>^Info.plist$</key>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>10</real>
+			<real>1100</real>
 		</dict>
-		<key>^ResourceRules.plist$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>100</real>
-		</dict>
+		<key>^version.plist$</key>
+		<true/>
 	</dict>
 	<key>rules2</key>
 	<dict>
-		<key>.*</key>
-		<true/>
+		<key>.*\.dSYM($|/)</key>
+		<dict>
+			<key>weight</key>
+			<real>11</real>
+		</dict>
+		<key>^</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^(.*/)?\.DS_Store$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>2000</real>
+		</dict>
 		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
 		<dict>
 			<key>nested</key>
 			<true/>
 			<key>weight</key>
-			<real>0.0</real>
+			<real>10</real>
 		</dict>
-		<key>^Info.plist$</key>
+		<key>^.*</key>
+		<true/>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^Info\.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^PkgInfo$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>nested</key>
 			<true/>
 			<key>weight</key>
 			<real>10</real>
 		</dict>
-		<key>^ResourceRules.plist$</key>
+		<key>^embedded\.provisionprofile$</key>
 		<dict>
-			<key>omit</key>
-			<true/>
 			<key>weight</key>
-			<real>100</real>
+			<real>20</real>
+		</dict>
+		<key>^version\.plist$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
 		</dict>
 	</dict>
 </dict>
