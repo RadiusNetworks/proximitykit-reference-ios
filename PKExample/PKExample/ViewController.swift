@@ -41,16 +41,19 @@ class ViewController: UIViewController, RPKManagerDelegate {
   
   func proximityKit(manager: RPKManager!, didDetermineState state: RPKRegionState, forRegion region: RPKRegion!) {
     
-    if state == .Inside {
-        print("State Changed: Inside Region \(region.name) (\(region.identifier))")
-    }
-    else if state == .Outside {
-      print("State Changed: Outside Region \(region.name) (\(region.identifier))")
-    }
-    else if state == .Unknown {
-      print("State Changed: Unknown Region \(region.name) (\(region.identifier))")
-    }
+    var stateDescription: String
     
+    switch (state) {
+    case .Inside:
+      stateDescription = "Inside"
+      
+    case .Outside:
+      stateDescription = "Outside"
+      
+    case .Unknown:
+      stateDescription = "Unknown"
+    }
+    print("State Changed: \(stateDescription) Region \(region.name) (\(region.identifier))")
   }
   
   func proximityKit(manager : RPKManager, didEnter region:RPKRegion) {
@@ -66,6 +69,5 @@ class ViewController: UIViewController, RPKManagerDelegate {
       print("Major: \(beacon.major), Minor: \(beacon.minor)")
     }
   }
-
 }
 
