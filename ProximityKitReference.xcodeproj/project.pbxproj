@@ -84,6 +84,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BC9230A1CE3AAAC003622D0 /* Build configuration list for PBXNativeTarget "ProximityKitReference" */;
 			buildPhases = (
+				B5A889C51D078DF9000BD380 /* Download ProximityKit.framework */,
 				2BC922F41CE3AAAC003622D0 /* Sources */,
 				2BC922F51CE3AAAC003622D0 /* Frameworks */,
 				2BC922F61CE3AAAC003622D0 /* Resources */,
@@ -141,6 +142,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5A889C51D078DF9000BD380 /* Download ProximityKit.framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Download ProximityKit.framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "[ -d \"$TARGET_BUILD_DIR/ProximityKit.framework\" ] && exit\n\n echo \"ProximityKit.framework not found, downloading from GitHub\"\n tmpfile=\"$TEMP_FILES_DIR/ProximityKit.zip\"\n curl -L -o $tmpfile $(curl -s \"https://api.github.com/repos/RadiusNetworks/proximitykit-ios/releases/latest\" | grep browser_download_url | head -n 1 | cut -d '\"' -f 4)\n unzip -d $TARGET_BUILD_DIR $tmpfile\n rm $tmpfile\n \n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BC922F41CE3AAAC003622D0 /* Sources */ = {
