@@ -17,15 +17,18 @@ class ViewController: UIViewController, RPKManagerDelegate {
     
     super.viewDidLoad()
 
-    if let path = NSBundle.mainBundle().pathForResource("ProximityKit", ofType:"plist") {
-      if let dict = NSDictionary(contentsOfFile:path) {
-        self.proximityKitManager = RPKManager(delegate:self, andConfig:dict as [NSObject : AnyObject])
-      }
-    }
-    else {
-      let reason = "The ProximityKit.plist configuration file is missing."
-      NSException(name:"Missing Configuration File", reason:reason, userInfo:nil).raise()
-    }
+    // WARNING: Use the values from your kit in the configuration
+    
+    let configDict: [String:Any] = [
+      "PKAPIToken": "0000000000000000000000000000000000000000000000000000000000000000",
+      "PKGlobalUserIdentifier": 00000,
+      "PKKitName": "[ck_0000] Not a Real Kit",
+      "PKKitURL": "https://proximitykit.radiusnetworks.com/api/kits/0000",
+      "PKUserEmail": "example@example.com",
+      "PKUserIdentifier": 0000
+    ]
+
+    self.proximityKitManager = RPKManager(delegate:self, andConfig:configDict)
     
     if let proximityKitManager = self.proximityKitManager {
       proximityKitManager.start()
@@ -35,39 +38,38 @@ class ViewController: UIViewController, RPKManagerDelegate {
 
   // MARK: Proximity Kit Delegate Methods
   
-  func proximityKitDidSync(manager : RPKManager) {
+  func proximityKitDidSync(_ manager : RPKManager) {
     print("Proximity Kit did sync")
   }
   
-  func proximityKit(manager: RPKManager!, didDetermineState state: RPKRegionState, forRegion region: RPKRegion!) {
+  func proximityKit(_ manager: RPKManager!, didDetermineState state: RPKRegionState, for region: RPKRegion!) {
     
     var stateDescription: String
     
     switch (state) {
-    case .Inside:
-      stateDescription = "Inside"
-      
-    case .Outside:
-      stateDescription = "Outside"
-      
-    case .Unknown:
-      stateDescription = "Unknown"
+      case .inside:
+        stateDescription = "Inside"
+      case .outside:
+        stateDescription = "Outside"
+      case .unknown:
+        stateDescription = "Unknown"
     }
+
     print("State Changed: \(stateDescription) Region \(region.name) (\(region.identifier))")
   }
   
-  func proximityKit(manager : RPKManager, didEnter region:RPKRegion) {
+  func proximityKit(_ manager : RPKManager, didEnter region:RPKRegion) {
     print("Entered Region \(region.name), \(region.identifier)");
   }
   
-  func proximityKit(manager : RPKManager, didExit region:RPKRegion) {
+  func proximityKit(_ manager : RPKManager, didExit region:RPKRegion) {
     print("Exited Region \(region.name), \(region.identifier)");
   }
   
-  func proximityKit(manager: RPKManager!, didRangeBeacons beacons: [AnyObject]!, inRegion region: RPKBeaconRegion!) {
+  func proximityKit(_ manager: RPKManager!, didRangeBeacons beacons: [Any]!, in region: RPKBeaconRegion!) {
     for beacon in beacons as! [RPKBeacon] {
       print("Major: \(beacon.major), Minor: \(beacon.minor)")
     }
   }
-}
 
+}
