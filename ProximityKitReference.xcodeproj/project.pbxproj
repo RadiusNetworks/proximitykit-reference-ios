@@ -11,19 +11,19 @@
 		2BC922FC1CE3AAAC003622D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC922FB1CE3AAAC003622D0 /* AppDelegate.swift */; };
 		2BC922FE1CE3AAAC003622D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC922FD1CE3AAAC003622D0 /* ViewController.swift */; };
 		2BC923011CE3AAAC003622D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC922FF1CE3AAAC003622D0 /* Main.storyboard */; };
-		2BC9230E1CE3AAF8003622D0 /* ProximityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC9230D1CE3AAF8003622D0 /* ProximityKit.framework */; };
 		2BC923101CE3B23F003622D0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC9230F1CE3B23F003622D0 /* libsqlite3.0.tbd */; };
+		B55184031D07653500A6C175 /* ProximityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55184021D07653500A6C175 /* ProximityKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B637D7D1CE3B7DE00546A12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2BC922F81CE3AAAC003622D0 /* PKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC922F81CE3AAAC003622D0 /* ProximityKitReference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximityKitReference.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC922FB1CE3AAAC003622D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BC922FD1CE3AAAC003622D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2BC923001CE3AAAC003622D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BC923071CE3AAAC003622D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BC9230D1CE3AAF8003622D0 /* ProximityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProximityKit.framework; sourceTree = "<group>"; };
 		2BC9230F1CE3B23F003622D0 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		B55184021D07653500A6C175 /* ProximityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProximityKit.framework; path = "../gamera-ios/build/Debug-iphoneos/ProximityKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,8 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55184031D07653500A6C175 /* ProximityKit.framework in Frameworks */,
 				2BC923101CE3B23F003622D0 /* libsqlite3.0.tbd in Frameworks */,
-				2BC9230E1CE3AAF8003622D0 /* ProximityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +42,8 @@
 		2BC922EF1CE3AAAC003622D0 = {
 			isa = PBXGroup;
 			children = (
-				2BC922FA1CE3AAAC003622D0 /* PKExample */,
+				B55184021D07653500A6C175 /* ProximityKit.framework */,
+				2BC922FA1CE3AAAC003622D0 /* ProximityKitReference */,
 				2BC922F91CE3AAAC003622D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +51,12 @@
 		2BC922F91CE3AAAC003622D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BC922F81CE3AAAC003622D0 /* PKExample.app */,
+				2BC922F81CE3AAAC003622D0 /* ProximityKitReference.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2BC922FA1CE3AAAC003622D0 /* PKExample */ = {
+		2BC922FA1CE3AAAC003622D0 /* ProximityKitReference */ = {
 			isa = PBXGroup;
 			children = (
 				2B637D7D1CE3B7DE00546A12 /* Assets.xcassets */,
@@ -65,14 +66,13 @@
 				2BC922FF1CE3AAAC003622D0 /* Main.storyboard */,
 				2BC923071CE3AAAC003622D0 /* Info.plist */,
 			);
-			path = PKExample;
+			path = ProximityKitReference;
 			sourceTree = "<group>";
 		};
 		2BC923111CE3B28F003622D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2BC9230F1CE3B23F003622D0 /* libsqlite3.0.tbd */,
-				2BC9230D1CE3AAF8003622D0 /* ProximityKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,10 +80,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2BC922F71CE3AAAC003622D0 /* PKExample */ = {
+		2BC922F71CE3AAAC003622D0 /* ProximityKitReference */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BC9230A1CE3AAAC003622D0 /* Build configuration list for PBXNativeTarget "PKExample" */;
+			buildConfigurationList = 2BC9230A1CE3AAAC003622D0 /* Build configuration list for PBXNativeTarget "ProximityKitReference" */;
 			buildPhases = (
+				B5A889C51D078DF9000BD380 /* Download ProximityKit.framework */,
 				2BC922F41CE3AAAC003622D0 /* Sources */,
 				2BC922F51CE3AAAC003622D0 /* Frameworks */,
 				2BC922F61CE3AAAC003622D0 /* Resources */,
@@ -92,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = PKExample;
-			productName = PKExample;
-			productReference = 2BC922F81CE3AAAC003622D0 /* PKExample.app */;
+			name = ProximityKitReference;
+			productName = ProximityKitReference;
+			productReference = 2BC922F81CE3AAAC003622D0 /* ProximityKitReference.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2BC922F31CE3AAAC003622D0 /* Build configuration list for PBXProject "PKExample" */;
+			buildConfigurationList = 2BC922F31CE3AAAC003622D0 /* Build configuration list for PBXProject "ProximityKitReference" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -125,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BC922F71CE3AAAC003622D0 /* PKExample */,
+				2BC922F71CE3AAAC003622D0 /* ProximityKitReference */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +142,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5A889C51D078DF9000BD380 /* Download ProximityKit.framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Download ProximityKit.framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "[ -d \"$TARGET_BUILD_DIR/ProximityKit.framework\" ] && exit\n\n echo \"ProximityKit.framework not found, downloading from GitHub\"\n tmpfile=\"$TEMP_FILES_DIR/ProximityKit.zip\"\n curl -L -o $tmpfile $(curl -s \"https://api.github.com/repos/RadiusNetworks/proximitykit-ios/releases/latest\" | grep browser_download_url | head -n 1 | cut -d '\"' -f 4)\n unzip -d $TARGET_BUILD_DIR $tmpfile\n rm $tmpfile\n \n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BC922F41CE3AAAC003622D0 /* Sources */ = {
@@ -257,12 +275,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/PKExample",
+					"$(PROJECT_DIR)/ProximityKitReference",
 				);
-				INFOPLIST_FILE = PKExample/Info.plist;
+				INFOPLIST_FILE = ProximityKitReference/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.radiusnetworks.PKExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.radiusnetworks.ProximityKitReference;
+				PRODUCT_NAME = ProximityKitReference;
 			};
 			name = Debug;
 		};
@@ -272,19 +290,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/PKExample",
+					"$(PROJECT_DIR)/ProximityKitReference",
 				);
-				INFOPLIST_FILE = PKExample/Info.plist;
+				INFOPLIST_FILE = ProximityKitReference/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.radiusnetworks.PKExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.radiusnetworks.ProximityKitReference;
+				PRODUCT_NAME = ProximityKitReference;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2BC922F31CE3AAAC003622D0 /* Build configuration list for PBXProject "PKExample" */ = {
+		2BC922F31CE3AAAC003622D0 /* Build configuration list for PBXProject "ProximityKitReference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BC923081CE3AAAC003622D0 /* Debug */,
@@ -293,7 +311,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BC9230A1CE3AAAC003622D0 /* Build configuration list for PBXNativeTarget "PKExample" */ = {
+		2BC9230A1CE3AAAC003622D0 /* Build configuration list for PBXNativeTarget "ProximityKitReference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BC9230B1CE3AAAC003622D0 /* Debug */,
