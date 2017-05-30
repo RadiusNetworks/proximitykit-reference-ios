@@ -298,6 +298,7 @@
 					"$(PROJECT_DIR)/ProximityKitReference",
 				);
 				INFOPLIST_FILE = ProximityKitReference/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.radiusnetworks.ProximityKitReference;
 				PRODUCT_NAME = ProximityKitReference;
@@ -315,6 +316,7 @@
 					"$(PROJECT_DIR)/ProximityKitReference",
 				);
 				INFOPLIST_FILE = ProximityKitReference/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.radiusnetworks.ProximityKitReference;
 				PRODUCT_NAME = ProximityKitReference;
