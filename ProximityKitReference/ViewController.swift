@@ -20,7 +20,7 @@ class ViewController: UIViewController, RPKManagerDelegate {
     // WARNING: Use the values from your kit in the configuration
     
     let configDict: [String:Any] = [
-      "api_token": "c0de", // <Kit Token from Settings>
+      "api_token": "0000000000000000000000000000000000000000000000000000000000000000", // <Kit Token from Settings>
       "kit_url": "https://proximitykit.radiusnetworks.com/api/kits/0" // Kit URL from Settings, e. g. https://proximitykit.radiusnetworks.com/api/kits/[number]
     ]
 
