@@ -20,12 +20,8 @@ class ViewController: UIViewController, RPKManagerDelegate {
     // WARNING: Use the values from your kit in the configuration
     
     let configDict: [String:Any] = [
-      "PKAPIToken": "0000000000000000000000000000000000000000000000000000000000000000",
-      "PKGlobalUserIdentifier": 00000,
-      "PKKitName": "[ck_0000] Not a Real Kit",
-      "PKKitURL": "https://proximitykit.radiusnetworks.com/api/kits/0000",
-      "PKUserEmail": "example@example.com",
-      "PKUserIdentifier": 0000
+      "api_token": "0000000000000000000000000000000000000000000000000000000000000000", // <Kit Token from Settings>
+      "kit_url": "https://proximitykit.radiusnetworks.com/api/kits/0" // Kit URL from Settings, e. g. https://proximitykit.radiusnetworks.com/api/kits/[number]
     ]
 
     self.proximityKitManager = RPKManager(delegate:self, andConfig:configDict)
