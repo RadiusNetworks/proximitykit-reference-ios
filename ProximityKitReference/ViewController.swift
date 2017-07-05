@@ -51,20 +51,20 @@ class ViewController: UIViewController, RPKManagerDelegate {
         stateDescription = "Unknown"
     }
 
-    print("State Changed: \(stateDescription) Region \(region.name) (\(region.identifier))")
+    print("State Changed: \(stateDescription) Region \(region.name ?? "untitled") (\(region.identifier ?? ""))")
   }
   
   func proximityKit(_ manager : RPKManager, didEnter region:RPKRegion) {
-    print("Entered Region \(region.name), \(region.identifier)");
+    print("Entered Region \(region.name ?? "untitled"), \(region.identifier ?? "")");
   }
   
   func proximityKit(_ manager : RPKManager, didExit region:RPKRegion) {
-    print("Exited Region \(region.name), \(region.identifier)");
+    print("Exited Region \(region.name ?? "untitled"), \(region.identifier ?? "")");
   }
   
   func proximityKit(_ manager: RPKManager!, didRangeBeacons beacons: [Any]!, in region: RPKBeaconRegion!) {
     for beacon in beacons as! [RPKBeacon] {
-      print("Major: \(beacon.major), Minor: \(beacon.minor)")
+      print("Major: \(beacon.major  ?? -1), Minor: \(beacon.minor  ?? -1)")
     }
   }
 
